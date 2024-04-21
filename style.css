@@ -2,12 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana;
-    background-color: white;
+    background-color: black;
 }
 
-.header{
+.header {
     border-bottom: 3px solid #32b9cd;
-    background-color: black;
 }
 
 .container {
@@ -26,6 +25,7 @@ body {
 
 .navbar {
     display: flex;
+    flex-direction: row;
     list-style: none;
     width: 300px;
     justify-content: space-between;
@@ -33,45 +33,179 @@ body {
     align-items: center;
 }
 
-.banner{
-    padding: 40px 0;
-    color: white;
-    background-image: url('imagens/bg-jelly-fish-para_outras_pags.png');
+/* banner */
+
+.banner {
+    padding: 40px 20px 30px 10px;
+    color: #fff;
     height: 400px;
+    background-image: url("./imagens/bg-jelly-fish-para_outras_pags.png");
 }
 
 .banner .container {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 20%;
 }
 
-.banner .container p{
+
+.banner .container p {
     font-size: 36px;
-
+    width: 25%;
 }
 
-.banner .container p span{
+.banner .container p span {
     font-weight: bold;
-    color: #32b9cd;
 }
 
-.social{
-    padding: 40px;
-    justify-content: space-around;
+.social {
+    background-color: #fff;
+    padding: 40px 0;
 }
 
+.social .container {
+    justify-content: space-between;
+}
 
-
-.card{
+.card {
     width: 150px;
-
+    text-align: center;
 }
-.card img{
+
+.card img {
     width: 100px;
 }
 
-.social{
+.card h4 {
+    font-size: 24px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #32b9cd;
+}
+
+.logo {
+    width: 50px;
+}
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer .container p {
+    font-weight: bold;
+}
+
+/* adicionado */
+.agora {
+    font-weight: 800
+}
+
+.login {
+    height: 78vh;
+    background-image: url('./imagens/bg-jelly-fish-para_outras_pags.png');
+    background-size: cover;
+}
+
+.login .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 30%;
+    background-color: #e5e5e5;
+    border-radius: 10px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: palevioletred;
+    row-gap: 30px;
+    padding: 10px;
+}
+
+.card-login {
+    height: 60%;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    height: 90%;
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario label {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.formulario input {
+    border: 2px solid #32b9cd;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.formulario button{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e6005a;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.campo input{
+    width: 200px;
+    margin: 5px;
+    padding: 7px 15px;
+    border: 2px solid #32b9cd;
+}
+
+.botao {
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e6005a;
+    width: 120px;
+    height: 30px;
+    align-self: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: #e3b062;
+    cursor: pointer;
+}
+
+.agora {
+    font-weight: 800;
 }
